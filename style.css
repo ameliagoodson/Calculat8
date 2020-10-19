@@ -1,34 +1,86 @@
+body,
+html {
+	min-width: 100%;
+	min-height: 100%;
+	margin: 0;
+	background-color: rgb(241, 247, 252);
+}
+
 .container {
-  margin: 0 auto;
-  width: 70%;
+	width: 90%;
+	background-color: rgb(241, 247, 252);
+	margin: 0;
+	padding: 10px 10px 10px 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#heading {
+	font-size: 22px;
+}
+#subheading {
+	font-size: 16px;
+	font-weight: lighter;
 }
 
 input {
-  background: none;
-  color: rgb(140, 140, 140);
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  width: 50%;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid lightgrey;
+	background-color: white;
+	color: rgb(140, 140, 140);
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 50%;
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid lightgrey;
 }
 
 input:focus {
-  outline: none;
+	outline: none;
 }
 
 button {
-  background-color: #D6EEFF;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 20px 40px 20px 0;
-  font-size: 20px;
-  cursor: pointer;
+	background-color: #d6eeff;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 20px 40px 20px 0;
+	font-size: 20px;
+	cursor: pointer;
 }
 
 .lucky-btn {
-  background-color: #A491D3;
-  color: white;
+	background-color: #a491d3;
+	color: white;
 }
+
+/* Media queries */
+/* large phones */
+@media only screen and (min-width: 450px) {
+	.container {
+		width: 70%;
+		padding: 10px 10px 10px 10px;
+		margin: auto;
+	}
+	body,
+	html {
+		background-color: white;
+		display: flex;
+		align-items: center;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	.container {
+		max-width: 50%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.container {
+		max-width: 35%;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+} */
