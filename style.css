@@ -1,13 +1,15 @@
-body,
-html {
-	min-width: 100%;
-	min-height: 100%;
+body {
+	min-width: 100vw;
+	min-height: 100vh;
 	margin: 0;
-	background-color: rgb(241, 247, 252);
+}
+body {
+	background-image: url(./assets/background-geometric2.jpg);
+	background-size: cover;
 }
 
 .container {
-	width: 90%;
+	width: 100%;
 	background-color: rgb(241, 247, 252);
 	margin: 0;
 	padding: 10px 10px 10px 20px;
@@ -38,17 +40,17 @@ input:focus {
 }
 
 button {
-	background-color: #d6eeff;
-	border-radius: 5px;
+	background-color: #94d1fc;
+	border: none;
+	outline: none;
 	padding: 10px;
 	margin: 20px 40px 20px 0;
 	font-size: 20px;
 	cursor: pointer;
 }
-
-.lucky-btn {
-	background-color: #a491d3;
-	color: white;
+button:active {
+	transform: scale(0.97);
+	background-color: #4fb3fa;
 }
 
 /* Media queries */
@@ -80,7 +82,3 @@ button {
 		max-width: 35%;
 	}
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-/* @media only screen and (min-width: 1200px) {
-} */

@@ -28,17 +28,17 @@ function calculateTip() {
     else {
     var tipCalc = price * `0.${percent}`
     var tip = tipCalc.toFixed(2)
-    tipAmountTotal.textContent = tip
+    tipAmountTotal.textContent = "$" + tip
     var total = parseFloat(price + tip)
     newTotal.textContent = total.toFixed(2)
         // if no number of people is entered, assume one person
     if (percent && price && !people) {
         people = 1
-        totalEach.textContent = total
+        totalEach.textContent = "$" + total
     }
     else {
     var splitCalc = total / people
-    totalEach.textContent = splitCalc.toFixed(2)
+    totalEach.textContent = "$" + splitCalc.toFixed(2)
     }
 
     }
