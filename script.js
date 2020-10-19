@@ -24,11 +24,11 @@ function calculateTip() {
 
     if (!percent || !price) {
         alert("Please enter a price and percentage")
-        clear()
     }
     else {
-    var tipCalc = tipAmountTotal.textContent = price * `0.${percent}`
+    var tipCalc = price * `0.${percent}`
     var tip = tipCalc.toFixed(2)
+    tipAmountTotal.textContent = tip
     var total = parseFloat(price + tip)
     newTotal.textContent = total.toFixed(2)
         // if no number of people is entered, assume one person
