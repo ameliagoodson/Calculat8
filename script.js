@@ -23,7 +23,8 @@ function calculateTip() {
     var people = parseFloat(inputPeople.value)
 
     if (!percent || !price) {
-        alert("Please enter a price and percentage")
+        inputPrice.placeholder = "Please enter a number"
+        inputPercent.placeholder = "Please enter a number"
     }
     else {
     var tipCalc = price * `0.${percent}`
