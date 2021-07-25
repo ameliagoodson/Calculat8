@@ -1,0 +1,7 @@
+@import url(../Base/base.css);
+.navbar {
+	background-color: var(--blue-crayola);
+	margin-bottom: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}

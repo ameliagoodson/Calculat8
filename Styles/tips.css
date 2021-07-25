@@ -3,10 +3,6 @@ body {
 	min-height: 100vh;
 	margin: 0;
 }
-body {
-	background-image: url(./assets/background-geometric2.jpg);
-	background-size: cover;
-}
 
 .container {
 	width: 100%;

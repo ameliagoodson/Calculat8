@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="./Styles/tips.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="heading">Tip and split bill calculator</h1>
+    <h4 id="subheading">Calculate tips and amounts owing on split bills</h4>
+    <form id="form">
+      <input id="inputPrice" placeholder="Price e.g. price of meal">
+      <input id="inputPercent" placeholder="Tip %">
+      <input id="inputPeople" placeholder="Number of people">
+      <button id="submit">Calculate</button>
+      <button id="clear">Clear</button>
+    </form>
+    <div>
+      <h4>Tip amount: <span id="tip-amount"></span></h4>
+      <h3>Total each: <span id="total-each"></span></h3>
+      <h2>Total: <span id="new-total"></span></h2>
+      <br><br>
+    </div>
+  </div>
+
+  <script src="./Scripts/tips.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+/* COLOURS */
+:root {
+	--rich-black: #080708;
+	--blue-crayola: #3772ff;
+	--rose: #df2935;
+	--sunglow: #fdca40;
+	--platinum: #e6e8e6;
+}
+
+.page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+.content-wrap {
+	padding-bottom: 3rem; /* Footer height */
+}

@@ -1,0 +1,48 @@
+/* ---MAIN CONTENT--- */
+/* Layout */
+.col-main {
+	margin: 10px 0px 10px 0px;
+}
+
+/* Calculator */
+.calculator-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.firstOperand,
+.secondOperand {
+	background: var(--rich-black);
+	color: var(--platinum);
+}
+.firstOperand {
+	font-size: 1rem;
+}
+.secondOperand {
+	font-size: 2rem;
+}
+
+.firstOperand,
+.secondOperand {
+	width: 100%;
+	height: 3rem;
+}
+
+/* ---SUBCONTENT--- */
+.row-heading,
+.row-subcontent {
+	margin-top: 1rem;
+}
+.row-heading,
+.col-heading {
+	text-align: center;
+	margin: auto;
+}
+
+.image-placeholder {
+	width: 6rem;
+	height: 6rem;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}

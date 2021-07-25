@@ -1,0 +1,30 @@
+@import url(../Base/base.css);
+.btn {
+	background: var(--platinum);
+	width: 4rem;
+	height: 2rem;
+	text-align: center;
+	padding: 0px;
+	margin: 1px;
+	outline: none;
+	border: none;
+}
+
+.btn-equals {
+	background: var(--blue-crayola);
+	width: 4rem;
+	height: 2rem;
+	text-align: center;
+	padding: 0px;
+	margin: 1px;
+	color: var(--platinum);
+	outline: none;
+	border: none;
+}
+.btn-equals:hover {
+	background: var(--blue-crayola);
+	opacity: 0.75;
+}
+.btn-AC {
+	width: 100%;
+}

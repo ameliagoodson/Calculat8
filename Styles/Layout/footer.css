@@ -1,0 +1,11 @@
+@import url(../Base/base.css);
+.footer {
+	background: var(--sunglow);
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	height: 3rem; /* Footer height */
+	text-align: center;
+}

@@ -2,34 +2,98 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tip Calculator</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Other style sheets -->
+    <link rel="stylesheet" href="./Styles/Base/base.css">
+    <link rel="stylesheet" href="./Styles/Layout/navbar.css">
+    <link rel="stylesheet" href="./Styles/Layout/footer.css">
+    <link rel="stylesheet" href="./Styles/Components/buttons.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
-  <div class="container">
-      <h1 id="heading">Tip and split bill calculator  <i class="fas fa-calculator"></i></h1>
-      <h4 id="subheading">Calculate tips and amounts owing on split bills</h4>
-      <form id="form">
-        <input id="inputPrice" placeholder="Price e.g. price of meal"> 
-        <input id="inputPercent" placeholder="Tip %">
-        <input id="inputPeople" placeholder="Number of people">
-        <button id="submit">Calculate</button>
-        <button id="clear">Clear</button>
-      </form>
-      <div>
-        <h4>Tip amount: <span id="tip-amount"></span></h4>
-        <h3>Total each: <span id="total-each"></span></h3>
-        <h2>Total: <span id="new-total"></span></h2>
-        <br><br>
-      </div>
-  </div>
-  
-  <script src="./script.js"></script>
+    <div class="page-container">
+        <div class="content-wrap">
+            <nav class="navbar">I am a navbar
+                <button class="btn">button</button>
+            </nav>
+            <div class="container">
+                <div class="row div-heading">
+                    <h1 class="row-heading">Calculators</h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-main">
+                        <div class="calculator-container">
+                            <form class="calculator-form">
+                                <div class="row">
+                                    <div class="firstOperand" type="text">1234</div>
+                                </div>
+                                <div class="row">
+                                    <div class="secondOperand" type="text">1234</div>
+                                </div>
+                                <div class=" row">
+                                    <button class="btn btn-number" id="btn-7" value="7" type="button">7</button>
+                                    <button class="btn btn-number" id="btn-8" value="8" type="button">8</button>
+                                    <button class="btn btn-number" id="btn-9" value="9" type="button">9</button>
+                                    <button class="btn btn-operator" id="btn-divide" value="/" type="button">/</button>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-number" id="btn-4" value="4" type="button">4</button>
+                                    <button class="btn btn-number" id="btn-5" value="5" type="button">5</button>
+                                    <button class="btn btn-number" id="btn-6" value="6" type="button">6</button>
+                                    <button class="btn btn-operator" id="btn-multiply" value="*"
+                                        type="button">x</button>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-number" id="btn-1" value="1" type="button">1</button>
+                                    <button class="btn btn-number" id="btn-2" value="2" type="button">2</button>
+                                    <button class="btn btn-number" id="btn-3" value="3" type="button">3</button>
+                                    <button class="btn btn-operator" id="btn-minus" value="-" type="button">-</button>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-number" id="btn-0" value="0" type="button">0</button>
+                                    <button class="btn btn-number" id="btn-decimal" value="." type="button">.</button>
+                                    <button class="btn btn-operator" id="btn-plus" value="+" type="button">+</button>
+                                    <button class="btn-equals" id="btn-equals" value="=" type="button">=</button>
+                                </div>
+                                <div class="row">
+                                    <button class="btn btn-AC" type="button">AC</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-main">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Perferendis eaque,
+                        vitae dignissimos ad eius qui reprehenderit ea atque molestiae. Ipsum perferendis quis
+                        perspiciatis
+                        repudiandae nesciunt distinctio illo tenetur! Ex, repellat.</div>
+                </div>
+                <div class="row row-subcontent">
+                    <div class="col-4 col-subcontent">
+                        <h2 class="col-heading">One column</h2>
+                        <img src="./assets/placeholder-image.png" class="image-placeholder">
+                    </div>
+                    <div class="col-4 col-subcontent">
+                        <h2 class="col-heading">One column</h2>
+                        <img src="./assets/placeholder-image.png" class="image-placeholder">
+                    </div>
+                    <div class="col-4 col-subcontent">
+                        <h2 class="col-heading">One column</h2>
+                        <img src="./assets/placeholder-image.png" class="image-placeholder">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">I am a footer
+        </footer>
+    </div>
+    <script src="./Scripts/calculator.js"></script>
 </body>
 
 </html>
