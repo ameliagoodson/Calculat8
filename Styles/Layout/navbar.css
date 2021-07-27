@@ -1,7 +1,19 @@
 @import url(../Base/base.css);
 .navbar {
-	background-color: var(--blue-crayola);
+	background: rgb(8, 7, 8);
+	background: linear-gradient(
+		79deg,
+		rgba(8, 7, 8, 1) 0%,
+		rgba(55, 114, 255, 1) 100%
+	);
 	margin-bottom: 3rem;
 	padding-left: 1rem;
 	padding-right: 1rem;
+}
+
+.brand {
+	color: white;
+	font-family: "Audiowide", cursive;
+	font-size: 1.5rem;
+	margin: 0;
 }

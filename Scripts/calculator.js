@@ -9,13 +9,13 @@ var btnEquals = document.querySelector('.btn-equals')
 var firstOperand = document.querySelector('.firstOperand')
 var currentOperand = document.querySelector('.secondOperand')
 var btnAC = document.querySelector('.btn-AC');
-
     
 // For each button the user clicks add text to screen
 numberBtns.forEach(button => {
     button.addEventListener('click', function () {
         var numbers = button.value
         currentOperand.append(numbers)
+        
     })
 });
 

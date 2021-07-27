@@ -1,9 +1,9 @@
-body {
+body,
+html {
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
 }
-
 /* COLOURS */
 :root {
 	--rich-black: #080708;
@@ -12,12 +12,20 @@ body {
 	--sunglow: #fdca40;
 	--platinum: #e6e8e6;
 }
-
 .page-container {
 	position: relative;
-	min-height: 100vh;
+	height: 100%;
+	width: 100%;
 }
 
 .content-wrap {
 	padding-bottom: 3rem; /* Footer height */
+}
+.container {
+	max-width: 760px;
+	padding: 0px;
+}
+
+.col-heading {
+	font-size: 18px;
 }

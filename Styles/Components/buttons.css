@@ -8,7 +8,16 @@
 	margin: 1px;
 	outline: none;
 	border: none;
+	border-radius: 0.3rem;
 }
+
+/* button press effect */
+.btn,
+.btn-equals,
+.btn-AC:active {
+	transform: translateY(4px);
+}
+/*  */
 
 .btn-equals {
 	background: var(--blue-crayola);
@@ -20,6 +29,7 @@
 	color: var(--platinum);
 	outline: none;
 	border: none;
+	border-radius: 0.3rem;
 }
 .btn-equals:hover {
 	background: var(--blue-crayola);
