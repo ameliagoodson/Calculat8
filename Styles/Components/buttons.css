@@ -12,10 +12,10 @@
 }
 
 /* button press effect */
-.btn,
-.btn-equals,
+.btn:active,
+.btn-equals:active,
 .btn-AC:active {
-	transform: translateY(4px);
+	transform: translateY(2px);
 }
 /*  */
 
