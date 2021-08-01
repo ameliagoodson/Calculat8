@@ -1,0 +1,71 @@
+.grid-container {
+	display: grid;
+	grid-template-rows: 1;
+	width: 50%;
+	background-color: white;
+	padding: 30px;
+	border: solid 3px var(--sunglow);
+	border-radius: 0.25rem;
+	justify-content: center;
+	margin: auto;
+}
+
+.active {
+	display: none;
+}
+
+.row-btn {
+	justify-content: center;
+	display: grid;
+}
+.dropdown-btn {
+	border: none;
+	padding: 10px 30px;
+	border-radius: 0.25rem;
+}
+.icon-arrow {
+	width: 18px;
+	height: 15px;
+	margin-left: 10px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: var(--platinum);
+}
+.list-item {
+	background-color: var(--platinum);
+	text-align: center;
+}
+.list-item:hover {
+	background-color: rgba(55, 114, 255, 0.5);
+}
+.row {
+	margin: 0px;
+}
+
+.input-row {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 20px;
+	width: 100%;
+	justify-content: center;
+}
+
+.input-number {
+	background-color: var(--platinum);
+	margin-top: 30px;
+	height: 3rem;
+	width: 100%;
+	border: none;
+	border-radius: 0.25rem;
+}
+
+.input-label {
+	width: 100%;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Audiowide", cursive;
+}

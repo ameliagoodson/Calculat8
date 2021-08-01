@@ -1,20 +1,22 @@
 body,
 html {
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	margin: 0;
+	padding: 0;
 }
 /* COLOURS */
 :root {
 	--rich-black: #080708;
 	--blue-crayola: #3772ff;
+	/* blue crayola: rgb(55, 114, 255) */
 	--rose: #df2935;
 	--sunglow: #fdca40;
 	--platinum: #e6e8e6;
 }
 .page-container {
 	position: relative;
-	height: 100%;
+	min-height: 100vh;
 	width: 100%;
 }
 

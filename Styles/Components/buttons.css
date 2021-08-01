@@ -17,7 +17,6 @@
 .btn-AC:active {
 	transform: translateY(2px);
 }
-/*  */
 
 .btn-equals {
 	background: var(--blue-crayola);
