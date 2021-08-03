@@ -1,80 +1,64 @@
-body {
-	min-width: 100vw;
-	min-height: 100vh;
-	margin: 0;
+.main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.container {
-	width: 100%;
-	background-color: rgb(241, 247, 252);
-	margin: 0;
-	padding: 10px 10px 10px 20px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-#heading {
-	font-size: 22px;
-}
-#subheading {
-	font-size: 16px;
-	font-weight: lighter;
+.form-container {
+	width: 90%;
+	padding: 30px;
+	background-color: var(--blue-crayola-pastel);
+	border-radius: 0.25rem;
 }
 
-input {
-	background-color: white;
-	color: rgb(140, 140, 140);
-	font-size: 18px;
-	padding: 10px 10px 10px 5px;
-	display: block;
+.form {
+	display: flex;
+	flex-direction: row;
+}
+
+.col-inputs {
+	display: flex;
+	flex-direction: column;
 	width: 50%;
-	border: none;
-	border-radius: 0;
-	border-bottom: 1px solid lightgrey;
+	margin: 0px;
+	padding: 0px;
 }
-
-input:focus {
-	outline: none;
-}
-
-button {
-	background-color: #94d1fc;
-	border: none;
-	outline: none;
+.col-buttons {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 10px;
 	padding: 10px;
-	margin: 20px 40px 20px 0;
-	font-size: 20px;
-	cursor: pointer;
+	justify-content: space-around;
 }
-button:active {
-	transform: scale(0.97);
-	background-color: #4fb3fa;
-}
-
-/* Media queries */
-/* large phones */
-@media only screen and (min-width: 450px) {
-	.container {
-		width: 70%;
-		padding: 10px 10px 10px 10px;
-		margin: auto;
-	}
-	body,
-	html {
-		background-color: white;
-		display: flex;
-		align-items: center;
-	}
+#btn-submit,
+#btn-clear {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-width: fit-content;
+	padding-top: 25px;
+	padding-bottom: 25px;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-	.container {
-		max-width: 50%;
-	}
+.btn-text {
+	margin: 0px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-	.container {
-		max-width: 35%;
-	}
+.input-number {
+	background-color: white;
+	border: none;
+	height: 3rem;
+	border-radius: 0.25rem;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	font-family: "Audiowide", cursive;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.row-display {
+	display: block;
 }

@@ -7,11 +7,10 @@ html {
 }
 /* COLOURS */
 :root {
-	--rich-black: #080708;
-	--blue-crayola: #3772ff;
-	/* blue crayola: rgb(55, 114, 255) */
-	--rose: #df2935;
-	--sunglow: #fdca40;
+	--rich-black: rgb(8, 7, 8);
+	--blue-crayola: rgb(55, 114, 255);
+	--blue-crayola-pastel: rgba(55, 114, 255, 0.4);
+	--sunglow: rgb(253, 202, 64);
 	--platinum: #e6e8e6;
 }
 .page-container {
