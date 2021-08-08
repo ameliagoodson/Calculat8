@@ -12,7 +12,7 @@
     <!-- Google fonts style sheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap" rel="stylesheet">
     <!-- Other style sheets -->
     <link rel="stylesheet" href="./Styles/styles.css">
     <link rel="stylesheet" href="./Styles/Base/base.css">
@@ -26,9 +26,36 @@
     <div class="page-container">
         <div class="content-wrap">
             <nav class="navbar">
-                <h1 class="brand"> Calcul8</h1>
+                <h1 class="brand"><a class="brand-link" href="./index.html">CALCUL8</a></h1>
+                <button class="hamburger-btn">
+                    <img src="/assets/hamburger-icon.png" class="icon-hamburger">
+                </button>
+                <ul class="nav-list display">
+                    <a class="nav-link first-link" href="./Pages/bmi.html">
+                        <li>BMI</li>
+                    </a>
+                    <a class="nav-link second-link" href="./Pages/conversions.html">
+                        <li>Convert</li>
+                    </a>
+                    <a class="nav-link third-link" href="./Pages/conversions.html">
+                        <li>Tips and split bills</li>
+                    </a>
+                </ul>
             </nav>
-            <div class="container">
+            <div class="container-main">
+                <div class="text-container">
+                    <div class="row-calc-text">
+                        <h1>Calculators </h1>
+                        <p class="calc-text">Solve a quick equation with our basic calculator, <a
+                                href="./Pages/conversions.html" class="link-text">convert</a>
+                            measurements, discover your <a href="./Pages/bmi.html" class="link-text">bmi</a>,
+                            and make split bills easy with the <a href="./Pages/tips.html" class="link-text">tips and
+                                split
+                                bill
+                                calculator</a></p>
+
+                    </div>
+                </div>
                 <div class="row-calculator">
                     <div class="calculator-container">
                         <form class="calculator-form">
@@ -68,24 +95,43 @@
                         </form>
                     </div>
                 </div>
+            </div>
+            <!-- SUBCONTENT LINKS -->
+            <div class="container container-subcontent">
                 <div class="row row-subcontent">
-                    <div class="col-sm-12 col-md col-subcontent">
+                    <div class="col">
                         <a href="./Pages/bmi.html" class="page-link">
                             <h2 class="col-heading">BMI calculator</h2>
                             <img src="./assets/icon-scale.svg" class="image-icon">
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md col-subcontent">
+                    <div class="col">
+                        <p class="text-subcontent">Find your body mass index and assess whether your weight is in the
+                            healthy
+                            range</p>
+                    </div>
+                </div>
+                <div class="row row-subcontent">
+                    <div class="col">
                         <a href="./Pages/conversions.html" class="page-link">
                             <h2 class="col-heading">Conversions</h2>
                             <img src="./assets/arrow-icon-vector.svg" class="image-icon">
                         </a>
                     </div>
-                    <div class="col-sm-12 col-md col-subcontent">
+                    <div class="col">
+                        <p class="text-subcontent">Convert kilograms to pounds, kilometres to miles, and celcius to
+                            farenheit</p>
+                    </div>
+                </div>
+                <div class="row row-subcontent">
+                    <div class="col">
                         <a href="./Pages/tips.html" class="page-link">
                             <h2 class="col-heading">Tip calculator</h2>
                             <img src="./assets/icon-tips.svg" class="image-icon">
                         </a>
+                    </div>
+                    <div class="col">
+                        <p class="text-subcontent">Who owes what? Calculate split bills with or without tips</p>
                     </div>
                 </div>
             </div>
@@ -95,6 +141,14 @@
         </footer>
     </div>
     <script src="./Scripts/calculator.js"></script>
+    <script>
+        var hamburgerBtn = document.querySelector('.hamburger-btn')
+        var navList = document.querySelector('.nav-list')
+
+        hamburgerBtn.addEventListener('click', function () {
+            navList.classList.toggle('display')
+        })
+    </script>
 </body>
 
 </html>

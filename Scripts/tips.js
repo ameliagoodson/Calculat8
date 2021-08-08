@@ -1,10 +1,10 @@
 var inputPrice = document.getElementById("inputPrice")
 var inputPercent = document.getElementById("inputPercent")
 var inputPeople = document.getElementById("inputPeople")
-var tipAmountTotal = document.getElementById("tip-amount")
-var newTotal = document.getElementById("new-total")
+var tipAmountTotal = document.getElementById("total-tip")
+var newTotal = document.getElementById("grand-total")
 var totalEach = document.getElementById("total-each")
-var button = document.getElementById("submit")
+var button = document.getElementById("btn-submit")
 var clear = document.getElementById("clear")
 
 button.addEventListener("click", function (event) {
@@ -13,7 +13,7 @@ button.addEventListener("click", function (event) {
 })
 
 button.addEventListener("click", function () {
-    clear()
+    clear
 })
 
 

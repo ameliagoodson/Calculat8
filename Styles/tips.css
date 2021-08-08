@@ -1,14 +1,11 @@
-.main-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.body {
+	font-family: "Roboto", sans-serif;
 }
-
 .form-container {
-	width: 90%;
 	padding: 30px;
 	background-color: var(--blue-crayola-pastel);
 	border-radius: 0.25rem;
+	margin: 3rem;
 }
 
 .form {
@@ -22,6 +19,7 @@
 	width: 50%;
 	margin: 0px;
 	padding: 0px;
+	height: fit-content;
 }
 .col-buttons {
 	display: flex;
@@ -36,10 +34,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
 	min-width: fit-content;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .btn-text {
@@ -48,17 +45,47 @@
 	text-transform: uppercase;
 	font-weight: bold;
 }
+#inputPrice,
+#inputPeople {
+	margin-bottom: 10px;
+}
+
 .input-number {
 	background-color: white;
+	color: gray;
 	border: none;
-	height: 3rem;
+	height: 2rem;
 	border-radius: 0.25rem;
-	margin-bottom: 10px;
 	padding-left: 10px;
-	font-family: "Audiowide", cursive;
 	font-size: 16px;
 	text-transform: uppercase;
 }
-.row-display {
+.container-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: white;
+	border-radius: 0.25rem;
+	margin-top: 20px;
+}
+
+.row-total {
+	width: 33.3%;
+	text-align: center;
+}
+.total-text {
+	padding-top: 10px;
+}
+
+.sub-content-row {
+	display: grid;
+}
+
+.icon-home {
+	width: 4rem;
+	height: 4rem;
 	display: block;
+	margin: auto;
+	padding: 10px;
 }

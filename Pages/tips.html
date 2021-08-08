@@ -12,7 +12,7 @@
     <!-- Google fonts style sheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap" rel="stylesheet">
     <!-- Other style sheets -->
     <link rel="stylesheet" href="../Styles/Base/base.css">
     <link rel="stylesheet" href="../Styles/tips.css">
@@ -34,29 +34,39 @@
                 <div class="form-container">
                     <form class="form">
                         <div class="col-inputs">
-                            <input class="input-number" id="inputPrice" placeholder="meal price">
-                            <input class="input-number" id="inputPeople" placeholder="# people">
-                            <input class="input-number" id="inputPercent" placeholder="tip %">
+                            <input class="input-number" id="inputPrice" placeholder="meal price" required>
+                            <input class="input-number" id="inputPeople" placeholder="# people" required>
+                            <input class="input-number" id="inputPercent" placeholder="0%">
                         </div>
                         <div class="col-buttons">
                             <button class="btn" id="btn-submit">
-                                <p class="btn-text">Calculate</p>
+                                <p class="btn-text">=</p>
                             </button>
                             <button class="btn" id="btn-clear">
 
-                                <p class="btn-text">Clear</p>
+                                <p class="btn-text">CLEAR</p>
 
                             </button>
                         </div>
                     </form>
-                    <div class="row-display">
-                        <h4>Tip amount: <span id="tip-amount"></span></h4>
-                        <h3>Total each: <span id="total-each"></span></h3>
-                        <h2>Total: <span id="new-total"></span></h2>
+                    <div class="container-display">
+                        <div class="row-total row-tip">
+                            <p class="total-text">Total tip</p>
+                            <p id="total-tip"></p>
+                        </div>
+                        <div class="row-total row-each">
+                            <p class="total-text">Total each</p>
+                            <p id="total-each"></p>
+                        </div>
+                        <div class="row-total row-grand">
+                            <p class="total-text">Total bill</p>
+                            <p id="grand-total"></p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                </div>
+            </div>
+            <div class="sub-content-row">
+                <a href="/index.html"><img src="../assets/icon-home.svg" class="icon-home"></a>
             </div>
         </div>
         <footer class="footer">I am a footer

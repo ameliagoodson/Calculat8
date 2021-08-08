@@ -9,7 +9,9 @@ var btnEquals = document.querySelector('.btn-equals')
 var firstOperand = document.querySelector('.firstOperand')
 var currentOperand = document.querySelector('.secondOperand')
 var btnAC = document.querySelector('.btn-AC');
-    
+
+
+// ----- CALCULATOR CODE -----    
 // For each button the user clicks add text to screen
 numberBtns.forEach(button => {
     button.addEventListener('click', function () {
@@ -78,25 +80,6 @@ btnAC.addEventListener('click', function () {
     currentOperand.textContent = ' ';
 
 })
-
-
-/* 
-1. User inputs number and operation values e.g. 1+1 =
-    1.1. Buttons have to be assigned values - DONE
-    1.2. A click on the button saves a value
-    1.3. A click on the button types the value in the input field
-    1.4. Typing the numbers saves a value
-    1.5. Typing the numbers types the value in the input field
-    How to do this?
-    - <button> element is now favoured way to create buttons
-    - Event listener click
-2. User input value is collected/stored 
-    How to do this?
-
-3. User input is displayed in calculatorTyped div
-    How to do this?
-    - calculatorTyped.value
-*/
 
 
 

@@ -12,8 +12,9 @@
     <!-- Google fonts style sheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Roboto&display=swap" rel="stylesheet">
     <!-- Other style sheets -->
+    <link rel="stylesheet" href="/Styles/bmi.css">
     <link rel="stylesheet" href="/Styles/Base/base.css">
     <link rel="stylesheet" href="/Styles/Layout/navbar.css">
     <link rel="stylesheet" href="/Styles/Layout/footer.css">
@@ -21,18 +22,66 @@
 </head>
 
 <body>
-
     <div class="page-container">
         <div class="content-wrap">
             <nav class="navbar">
-                <a href="../index.html" class="brand-link">
-                    <h1 class="brand"> Calcul8</h1>
-                </a>
+                <h1 class="brand"><a class="brand-link" href="/index.html">CALCUL8</a></h1>
+                <button class="hamburger-btn">
+                    <img src="/assets/hamburger-icon.png" class="icon-hamburger">
+                </button>
+                <ul class="nav-list display">
+                    <a class="nav-link first-link" href="./bmi.html">
+                        <li>BMI</li>
+                    </a>
+                    <a class="nav-link second-link" href="./conversions.html">
+                        <li>Convert</li>
+                    </a>
+                    <a class="nav-link third-link" href="./tips.html">
+                        <li>Tips and split bills</li>
+                    </a>
+                </ul>
             </nav>
+            <div class="main-container">
+                <div class="heading-container">
+                    <h1>What's your BMI?
+                        <img src="../assets/icon-scale.svg" class="icon-scale">
+                    </h1>
+                    <p>Body mass index, or BMI, is used to determine whether you are in a healthy weight range for
+                        your
+                        height. <br><br>BMI is a useful measurement for most people over 18 years old.</p>
+                </div>
+                <form>
+                    <p>Enter your height and weight to calculate your BMI</p>
+                    <div class="div-height-weight">
+                        <div class="div-height">
+                            <input type="number" id="height-input" placeholder="cms">
+                            <label>HEIGHT</label>
+                        </div>
+                        <div class="div-weight">
+                            <input type="number" id="weight-input" placeholder="kgs">
+                            <label>WEIGHT</label>
+                        </div>
+                    </div>
+                    <div class="div-btn">
+                        <button class="btn-bmi">
+                            <p class="btn-bmi-text">Find my BMI</p>
+                        </button>
+                    </div>
+                </form>
+                <div class="result-container show-container">
+                    <div class="results-div">
+                        <h1 class="result-heading">YOUR BMI IS</h1>
+                        <div class="bmi-div">
+                            <h1 class="bmi-number"></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <footer class="footer">I am a footer
-        </footer>
     </div>
+    <footer class="footer">I am a footer
+    </footer>
+    <script src="../Scripts/bmi.js"></script>
 </body>
 
 </html>
