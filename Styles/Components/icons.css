@@ -1,0 +1,13 @@
+@import url(../Base/base.css);
+
+.icon-sm {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.icon-lg {
+	width: 4rem;
+	height: 4rem;
+	display: block;
+	margin: auto;
+	padding: 10px;
+}

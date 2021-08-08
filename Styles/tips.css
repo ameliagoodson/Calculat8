@@ -1,50 +1,58 @@
-.body {
-	font-family: "Roboto", sans-serif;
+.main-container {
+	width: 80%;
+	margin: auto;
 }
+.heading-main {
+	margin-bottom: 20px;
+}
+
+.icon-convert {
+	width: 3rem;
+	height: 3rem;
+}
+
 .form-container {
-	padding: 30px;
-	background-color: var(--blue-crayola-pastel);
+	background-color: var(--light-yellow);
 	border-radius: 0.25rem;
-	margin: 3rem;
+	margin: auto;
 }
 
 .form {
+	padding: 20px;
+}
+.row-buttons {
+	width: 100%;
 	display: flex;
-	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 20px;
 }
 
-.col-inputs {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-	margin: 0px;
-	padding: 0px;
-	height: fit-content;
+#btn-clear,
+#btn-submit {
+	background-color: rgb(155, 167, 167);
+	font-size: 20px;
+	letter-spacing: 2px;
 }
-.col-buttons {
-	display: flex;
-	flex-direction: column;
+
+#btn-submit {
+	background-color: var(--sunglow);
 	width: 50%;
-	margin: 10px;
-	padding: 10px;
-	justify-content: space-around;
+	color: black;
+	height: 3rem;
 }
-#btn-submit,
 #btn-clear {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: fit-content;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	width: 4rem;
+	color: white;
+	height: 2.5rem;
 }
 
 .btn-text {
+	text-align: center;
 	margin: 0px;
-	text-decoration: none;
-	text-transform: uppercase;
 	font-weight: bold;
 }
+
 #inputPrice,
 #inputPeople {
 	margin-bottom: 10px;
@@ -54,25 +62,32 @@
 	background-color: white;
 	color: gray;
 	border: none;
-	height: 2rem;
+	height: 3rem;
 	border-radius: 0.25rem;
 	padding-left: 10px;
 	font-size: 16px;
-	text-transform: uppercase;
+	width: 50%;
+}
+label {
+	font-family: "Audiowide", cursive;
+	margin-left: 10px;
+	margin-bottom: 10px;
 }
 .container-display {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	background-color: white;
+	background-color: var(--light-yellow);
 	border-radius: 0.25rem;
-	margin-top: 20px;
 }
 
 .row-total {
-	width: 33.3%;
+	width: 30%;
 	text-align: center;
+	background-color: white;
+	margin-bottom: 20px;
+	border-radius: 0.25rem;
 }
 .total-text {
 	padding-top: 10px;
@@ -80,6 +95,7 @@
 
 .sub-content-row {
 	display: grid;
+	margin-top: 1rem;
 }
 
 .icon-home {

@@ -1,10 +1,9 @@
-.grid-container {
-	display: grid;
-	padding: 30px;
-	background-color: var(--blue-crayola-pastel);
-	border-radius: 0.25rem;
-	justify-content: center;
-	margin: 3rem;
+.main-container {
+	width: 80%;
+	margin: auto;
+}
+.heading-main {
+	margin-bottom: 20px;
 }
 
 .active {
@@ -20,6 +19,8 @@
 	padding: 10px 30px;
 	border-radius: 0.25rem;
 	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .icon-arrow {
 	width: 18px;
@@ -40,6 +41,10 @@ ul {
 .list-item:hover {
 	background-color: white;
 	cursor: pointer;
+}
+.conversion-container {
+	background-color: var(--light-yellow);
+	padding: 20px;
 }
 .row {
 	margin: 0px;
@@ -67,17 +72,25 @@ ul {
 	height: 3rem;
 	border: none;
 	border-radius: 0.25rem;
+	width: 70%;
+	padding-left: 10px;
 }
 
 .input-label {
-	width: 100%;
+	width: 70%;
 	text-align: center;
 	text-transform: uppercase;
 	font-family: "Audiowide", cursive;
 	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.label1,
+.label2 {
+	border-bottom: 1px solid var(--sunglow);
 }
 .sub-content-row {
 	display: grid;
+	margin-top: 1rem;
 }
 .icon-home {
 	width: 4rem;

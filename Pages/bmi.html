@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/Styles/Layout/navbar.css">
     <link rel="stylesheet" href="/Styles/Layout/footer.css">
     <link rel="stylesheet" href="/Styles/Components/buttons.css">
+    <link rel="stylesheet" href="/Styles/Components/icons.css">
 </head>
 
 <body>
@@ -43,8 +44,8 @@
             </nav>
             <div class="main-container">
                 <div class="heading-container">
-                    <h1>What's your BMI?
-                        <img src="../assets/icon-scale.svg" class="icon-scale">
+                    <h1 class="heading-main">What's your BMI?
+                        <img src="../assets/icon-scale.svg" class="icon-sm">
                     </h1>
                     <p>Body mass index, or BMI, is used to determine whether you are in a healthy weight range for
                         your
@@ -76,12 +77,23 @@
                         </div>
                     </div>
                 </div>
+                <div class="sub-content-row">
+                    <a href="/index.html"><img src="../assets/icon-home.svg" class="icon-lg"></a>
+                </div>
             </div>
         </div>
     </div>
     <footer class="footer">I am a footer
     </footer>
     <script src="../Scripts/bmi.js"></script>
+    <script>
+        var hamburgerBtn = document.querySelector('.hamburger-btn')
+        var navList = document.querySelector('.nav-list')
+
+        hamburgerBtn.addEventListener('click', function () {
+            navList.classList.toggle('display')
+        })
+    </script>
 </body>
 
 </html>

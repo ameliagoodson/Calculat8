@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../Styles/Layout/navbar.css">
     <link rel="stylesheet" href="../Styles/Layout/footer.css">
     <link rel="stylesheet" href="../Styles/Components/buttons.css">
+    <link rel="stylesheet" href="../Styles/Components/icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 
@@ -29,50 +30,81 @@
     <div class="page-container">
         <div class="content-wrap">
             <nav class="navbar">
-                <a href="../index.html" class="brand-link">
-                    <h1 class="brand"> Calcul8</h1>
-                </a>
+                <h1 class="brand"><a class="brand-link" href="/index.html">CALCUL8</a></h1>
+                <button class="hamburger-btn">
+                    <img src="/assets/hamburger-icon.png" class="icon-hamburger">
+                </button>
+                <ul class="nav-list display">
+                    <a class="nav-link first-link" href="bmi.html">
+                        <li>BMI</li>
+                    </a>
+                    <a class="nav-link second-link" href="conversions.html">
+                        <li>Convert</li>
+                    </a>
+                    <a class="nav-link third-link" href="tips.html">
+                        <li>Tips and split bills</li>
+                    </a>
+                </ul>
             </nav>
-            <div class="grid-container">
-                <div class="row-btn">
-                    <button class="dropdown-btn">Measurement
-                        <img src="../assets/icon-down-arrow.png" class="icon-arrow">
-                    </button>
-                    <div class="div-dropdown">
-                        <ul>
-                            <li class="list-item temp">Temperature</li>
-                            <li class="list-item distance">Distance</li>
-                            <li class="list-item weight">Weight</li>
-                        </ul>
+            <div class="main-container">
+                <div class="heading-container">
+                    <h1 class="heading-main">Conversions
+                        <img src="../assets/arrow-icon-vector.svg" class="icon-sm">
+                    </h1>
+                    <p>Need to know how many miles in five kilometres? Or what you weigh in pounds? Find out below
+                    </p>
+                </div>
+                <div class="conversion-container">
+                    <div class="row-btn">
+                        <button class="dropdown-btn">Measurement
+                            <img src="../assets/icon-down-arrow.png" class="icon-arrow">
+                        </button>
+                        <div class="div-dropdown">
+                            <ul>
+                                <li class="list-item temp">Temperature</li>
+                                <li class="list-item distance">Distance</li>
+                                <li class="list-item weight">Weight</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="column-input" id="column1">
+
+                            <input type="number" class="input-number" id="input1">
+                            <label class="input-label">
+                                <p class="label1"></p>
+                            </label>
+                        </div>
+                        <div class="column-input" id="column2">
+
+                            <input type="number" class="input-number" id="input2">
+                            <label class="input-label">
+                                <p class="label2"></p>
+                            </label>
+                        </div>
                     </div>
                 </div>
-                <div class="input-row">
-                    <div class="column-input" id="column1">
-
-                        <input type="number" class="input-number" id="input1">
-                        <label class="input-label">
-                            <p class="label1"></p>
-                        </label>
-                    </div>
-                    <div class="column-input" id="column2">
-
-                        <input type="number" class="input-number" id="input2">
-                        <label class="input-label">
-                            <p class="label2"></p>
-                        </label>
-                    </div>
+                <div class="sub-content-row">
+                    <a href="/index.html"><img src="../assets/icon-home.svg" class="icon-lg"></a>
                 </div>
-
-            </div>
-            <div class="sub-content-row">
-                <a href="/index.html"><img src="../assets/icon-home.svg" class="icon-home"></a>
             </div>
 
         </div>
-        <footer class="footer">I am a footer
-        </footer>
+
     </div>
+
+    <footer class="footer">I am a footer
+    </footer>
+
     <script src="../Scripts/conversions.js"></script>
+    <script>
+        var hamburgerBtn = document.querySelector('.hamburger-btn')
+        var navList = document.querySelector('.nav-list')
+
+        hamburgerBtn.addEventListener('click', function () {
+            navList.classList.toggle('display')
+        })
+    </script>
 </body>
 
 </html>

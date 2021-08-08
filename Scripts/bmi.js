@@ -7,9 +7,20 @@ var weightInput = document.querySelector('#weight-input')
 
 btnBMI.addEventListener('click', function (event) {
     event.preventDefault()
-    displayDiv.classList.toggle('result-container')
-    calculate()
+    validate()
+   
 })
+
+function validate() {
+    var heightValue = heightInput.value
+    var weightValue = weightInput.value
+   
+    if ((!heightValue) || (!weightValue)) {
+        return
+    }
+     calculate()
+}
+
 
 function calculate() {
     var weightKgs = weightInput.value
@@ -23,4 +34,9 @@ function calculate() {
     bmiNum = bmiNum.toFixed(1)
 
     bmiElement.textContent = bmiNum
+    display()
+}
+
+function display() {
+    displayDiv.classList.toggle('result-container')
 }

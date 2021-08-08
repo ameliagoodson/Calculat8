@@ -4,10 +4,8 @@
 	width: 80%;
 	margin: auto;
 }
-
-.icon-scale {
-	width: 3rem;
-	height: 3rem;
+.heading-main {
+	margin-bottom: 20px;
 }
 
 form {
@@ -83,6 +81,18 @@ label {
 .bmi-number {
 	font-size: 20px;
 	letter-spacing: 1px;
+}
+
+.sub-content-row {
+	display: grid;
+	margin-top: 1rem;
+}
+.icon-home {
+	width: 4rem;
+	height: 4rem;
+	display: block;
+	margin: auto;
+	padding: 10px;
 }
 
 /* MEDIA QUERIES */

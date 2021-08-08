@@ -19,59 +19,96 @@
     <link rel="stylesheet" href="../Styles/Layout/navbar.css">
     <link rel="stylesheet" href="../Styles/Layout/footer.css">
     <link rel="stylesheet" href="../Styles/Components/buttons.css">
-
+    <link rel="stylesheet" href="../Styles/Components/icons.css">
 </head>
 
 <body>
     <div class="page-container">
         <div class="content-wrap">
             <nav class="navbar">
-                <a href="../index.html" class="brand-link">
-                    <h1 class="brand"> Calcul8</h1>
-                </a>
+                <h1 class="brand"><a class="brand-link" href="/index.html">CALCUL8</a></h1>
+                <button class="hamburger-btn">
+                    <img src="/assets/hamburger-icon.png" class="icon-hamburger">
+                </button>
+                <ul class="nav-list display">
+                    <a class="nav-link first-link" href="bmi.html">
+                        <li>BMI</li>
+                    </a>
+                    <a class="nav-link second-link" href="conversions.html">
+                        <li>Convert</li>
+                    </a>
+                    <a class="nav-link third-link" href="tips.html">
+                        <li>Tips and split bills</li>
+                    </a>
+                </ul>
             </nav>
             <div class="main-container">
+                <div class="heading-container">
+                    <h1 class="heading-main">Tips and split bills
+                        <img src="../assets/icon-tips.svg" class="icon-sm">
+                    </h1>
+                    <p>Need to know how many miles in five kilometres? Or what you weigh in pounds? Find out below
+                    </p>
+                </div>
                 <div class="form-container">
                     <form class="form">
-                        <div class="col-inputs">
-                            <input class="input-number" id="inputPrice" placeholder="meal price" required>
-                            <input class="input-number" id="inputPeople" placeholder="# people" required>
-                            <input class="input-number" id="inputPercent" placeholder="0%">
+                        <div class="row-inputs">
+                            <div class="div-price">
+                                <input class="input-number" id="inputPrice" placeholder="e.g.  165" required
+                                    type="number">
+                                <label for="inputPrice">MEAL PRICE</label>
+                            </div>
+                            <div class="div-people">
+                                <input class="input-number" id="inputPeople" placeholder="e.g.  7" required
+                                    type="number">
+                                <label for="inputPeople"># PEOPLE</label>
+                            </div>
+                            <div class="div-tip">
+                                <input class="input-number" id="inputPercent" placeholder="0" type="number">
+                                <label for="inputPercent">TIP %</label>
+                            </div>
                         </div>
-                        <div class="col-buttons">
+                        <div class="row-buttons">
                             <button class="btn" id="btn-submit">
                                 <p class="btn-text">=</p>
                             </button>
                             <button class="btn" id="btn-clear">
-
-                                <p class="btn-text">CLEAR</p>
-
+                                <p class="btn-text">AC</p>
                             </button>
                         </div>
                     </form>
-                    <div class="container-display">
-                        <div class="row-total row-tip">
-                            <p class="total-text">Total tip</p>
-                            <p id="total-tip"></p>
-                        </div>
-                        <div class="row-total row-each">
-                            <p class="total-text">Total each</p>
-                            <p id="total-each"></p>
-                        </div>
-                        <div class="row-total row-grand">
-                            <p class="total-text">Total bill</p>
-                            <p id="grand-total"></p>
-                        </div>
+                </div>
+                <div class="container-display">
+                    <div class="row-total row-tip">
+                        <p class="total-text">Total tip</p>
+                        <p id="total-tip"></p>
+                    </div>
+                    <div class="row-total row-each">
+                        <p class="total-text">Total each</p>
+                        <p id="total-each"></p>
+                    </div>
+                    <div class="row-total row-grand">
+                        <p class="total-text">Total bill</p>
+                        <p id="grand-total"></p>
                     </div>
                 </div>
+                <div class="sub-content-row">
+                    <a href="/index.html"><img src="../assets/icon-home.svg" class="icon-lg"></a>
+                </div>
             </div>
-            <div class="sub-content-row">
-                <a href="/index.html"><img src="../assets/icon-home.svg" class="icon-home"></a>
-            </div>
+
         </div>
         <footer class="footer">I am a footer
         </footer>
         <script src="../Scripts/tips.js"></script>
+        <script>
+            var hamburgerBtn = document.querySelector('.hamburger-btn')
+            var navList = document.querySelector('.nav-list')
+
+            hamburgerBtn.addEventListener('click', function () {
+                navList.classList.toggle('display')
+            })
+        </script>
     </div>
 </body>
 
