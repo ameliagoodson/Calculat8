@@ -1,19 +1,22 @@
 @import url(./Base/base.css);
 
 .main-container {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 .heading-main {
 	margin-bottom: 20px;
 }
-
+.heading-container {
+	width: 80%;
+	margin: auto;
+}
 form {
 	background-color: var(--light-yellow);
 	border-radius: 0.25rem;
 	min-height: fit-content;
 	margin: auto;
-	width: 100%;
+	width: 80%;
 	padding: 20px;
 }
 .div-height-weight {
@@ -37,6 +40,7 @@ label {
 	font-family: "Audiowide", cursive;
 	margin-left: 10px;
 	margin-bottom: 10px;
+	border-bottom: 1px solid var(--sunglow);
 }
 .div-btn {
 	display: flex;
@@ -50,11 +54,14 @@ label {
 	outline: none;
 	border-radius: 0.25rem;
 	margin-top: 20px;
-	background-color: var(--sunglow);
+	background-color: var(--rose);
 }
 .btn-bmi-text {
 	padding: 10px;
 	margin: 0px;
+	font-size: 22px;
+	letter-spacing: 2px;
+	color: white;
 }
 .result-container {
 	display: none;
@@ -96,3 +103,26 @@ label {
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 500px) {
+	form {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.heading-container {
+		width: 50%;
+	}
+	form {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.heading-container {
+		width: 40%;
+	}
+	form {
+		width: 30%;
+	}
+}

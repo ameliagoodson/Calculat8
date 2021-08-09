@@ -4,6 +4,10 @@
 	margin: 10px 0px 10px 0px;
 }
 .main-container {
+	width: 100%;
+	margin: auto;
+}
+.heading-container {
 	width: 80%;
 	margin: auto;
 }
@@ -136,8 +140,8 @@
 		width: 50%;
 	}
 }
-@media screen and (min-width: 992px) {
-	.container {
-		max-width: 50%;
+@media screen and (min-width: 768px) {
+	.heading-container {
+		width: 50%;
 	}
 }

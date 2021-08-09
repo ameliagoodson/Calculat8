@@ -1,9 +1,13 @@
 .main-container {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 .heading-main {
 	margin-bottom: 20px;
+}
+.heading-container {
+	width: 80%;
+	margin: auto;
 }
 
 .active {
@@ -18,9 +22,10 @@
 	border: none;
 	padding: 10px 30px;
 	border-radius: 0.25rem;
-	font-weight: bold;
-	text-transform: uppercase;
 	letter-spacing: 2px;
+	font-size: 22px;
+	background-color: var(--rose);
+	color: white;
 }
 .icon-arrow {
 	width: 18px;
@@ -45,6 +50,8 @@ ul {
 .conversion-container {
 	background-color: var(--light-yellow);
 	padding: 20px;
+	width: 80%;
+	margin: auto;
 }
 .row {
 	margin: 0px;
@@ -101,23 +108,28 @@ ul {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (min-width: 450px) {
-	.grid-container {
-		width: 70%;
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 500px) {
+	.conversion-container {
+		width: 60%;
 	}
 }
 
-@media only screen and (min-width: 768px) {
-	.grid-container {
+@media screen and (min-width: 768px) {
+	.heading-container {
 		width: 50%;
 	}
-	.input-row {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	.conversion-container {
+		width: 50%;
 	}
-	#column1,
-	#column2 {
-		margin-top: 20px;
+}
+
+@media screen and (min-width: 992px) {
+	.heading-container {
+		width: 40%;
+	}
+	.conversion-container {
+		width: 40%;
 	}
 }

@@ -10,7 +10,7 @@ html {
 :root {
 	--rich-black: rgb(8, 7, 8);
 	--dark-purple: rgb(73, 2, 131);
-
+	--rose: rgb(247, 26, 97);
 	--blue-crayola: rgb(55, 114, 255);
 	--blue-crayola-pastel: rgba(55, 114, 255, 0.4);
 	--sunglow: rgb(253, 202, 64);

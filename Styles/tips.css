@@ -1,9 +1,15 @@
 .main-container {
-	width: 80%;
+	width: 100%;
 	margin: auto;
 }
 .heading-main {
 	margin-bottom: 20px;
+}
+.heading-container,
+.form-container,
+.container-display {
+	width: 80%;
+	margin: auto;
 }
 
 .icon-convert {
@@ -11,10 +17,10 @@
 	height: 3rem;
 }
 
-.form-container {
+.form-container,
+.container-display {
 	background-color: var(--light-yellow);
 	border-radius: 0.25rem;
-	margin: auto;
 }
 
 .form {
@@ -36,21 +42,27 @@
 }
 
 #btn-submit {
-	background-color: var(--sunglow);
+	background-color: var(--rose);
 	width: 50%;
 	color: black;
 	height: 3rem;
+	font-weight: bold;
+	font-size: 22px;
 }
 #btn-clear {
-	width: 4rem;
+	width: 5rem;
 	color: white;
-	height: 2.5rem;
+	height: 3rem;
+	text-transform: uppercase;
+	font-size: 16px;
 }
 
 .btn-text {
 	text-align: center;
 	margin: 0px;
-	font-weight: bold;
+	letter-spacing: 2px;
+
+	color: white;
 }
 
 #inputPrice,
@@ -72,21 +84,19 @@ label {
 	font-family: "Audiowide", cursive;
 	margin-left: 10px;
 	margin-bottom: 10px;
+	border-bottom: 1px solid var(--sunglow);
 }
+
+/* DISPLAY CONTAINER */
 .container-display {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	background-color: var(--light-yellow);
-	border-radius: 0.25rem;
+	display: grid;
 }
 
 .row-total {
-	width: 30%;
+	grid-row: 1;
 	text-align: center;
 	background-color: white;
-	margin-bottom: 20px;
+	margin: 10px;
 	border-radius: 0.25rem;
 }
 .total-text {
@@ -104,4 +114,32 @@ label {
 	display: block;
 	margin: auto;
 	padding: 10px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 500px) {
+	.form-container,
+	.container-display {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.heading-container {
+		width: 50%;
+	}
+	.form-container,
+	.container-display {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.heading-container {
+		width: 40%;
+	}
+	.form-container,
+	.container-display {
+		width: 30%;
+	}
 }
