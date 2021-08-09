@@ -1,11 +1,11 @@
 @import url(../Base/base.css);
 .navbar {
-	background-image: linear-gradient(
-			45deg,
-			rgba(73, 2, 131, 0.9),
-			rgba(255, 255, 255, 0.5)
+	background-image: radial-gradient(
+			circle,
+			rgba(255, 255, 255, 0.2),
+			rgba(53, 2, 73, 0.9)
 		),
-		url("../../assets/pattern-small-hexagon.png");
+		url("/assets/pattern-small-hexagon.png");
 
 	margin-bottom: 2rem;
 	padding-left: 1rem;
@@ -58,7 +58,6 @@
 }
 .nav-link {
 	font-size: 14px;
-	font-family: "Roboto";
 	list-style-type: none;
 	text-align: right;
 	color: rgb(73, 2, 131);
@@ -73,4 +72,39 @@
 }
 .first-link {
 	margin-top: 3.5rem;
+}
+.navbar-lg {
+	display: none;
+}
+
+@media only screen and (min-width: 769px) {
+	.hamburger-btn {
+		display: none;
+	}
+
+	/* DESKTOP / LARGE VERSION OF NAVBAR */
+	.navbar-lg {
+		display: block;
+		background-color: rgba(255, 255, 255, 0.9);
+	}
+
+	.navbar-lg-ul {
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 0px;
+		padding: 5px;
+	}
+	.navbar-lg-tips {
+		margin-right: 0px;
+	}
+	.navbar-lg-link {
+		display: inline-block;
+		color: rgb(73, 2, 131);
+		margin-left: 20px;
+		margin-right: 20px;
+		border: none;
+		text-decoration: none;
+	}
 }
