@@ -86,6 +86,7 @@
 	.navbar-lg {
 		display: block;
 		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 0.25rem;
 	}
 
 	.navbar-lg-ul {
@@ -106,5 +107,8 @@
 		margin-right: 20px;
 		border: none;
 		text-decoration: none;
+	}
+	.navbar-lg-link:hover {
+		color: black;
 	}
 }
