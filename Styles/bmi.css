@@ -1,24 +1,36 @@
 @import url(./Base/base.css);
 
+/* _________CONTAINERS______ */
 .main-container {
 	width: 100%;
 	margin: auto;
 }
+.heading-container,
+form,
+.show-container {
+	width: 80%;
+	margin: auto;
+}
+
+.heading-container,
+.show-container {
+	background-color: white;
+}
+.show-container {
+	margin-top: 20px;
+	border-top: 1px solid grey;
+}
+form {
+	min-height: fit-content;
+	padding: 20px;
+	background-color: var(--light-yellow);
+}
+/* _____________________________ */
+
 .heading-main {
 	margin-bottom: 20px;
 }
-.heading-container {
-	width: 80%;
-	margin: auto;
-}
-form {
-	background-color: var(--light-yellow);
-	border-radius: 0.25rem;
-	min-height: fit-content;
-	margin: auto;
-	width: 80%;
-	padding: 20px;
-}
+
 .div-height-weight {
 	display: inline;
 }
@@ -37,10 +49,8 @@ form {
 	padding-left: 10px;
 }
 label {
-	font-family: "Audiowide", cursive;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	border-bottom: 1px solid var(--sunglow);
 }
 .div-btn {
 	display: flex;
@@ -60,17 +70,13 @@ label {
 	padding: 10px;
 	margin: 0px;
 	font-size: 22px;
-	letter-spacing: 2px;
 	color: white;
 }
+
 .result-container {
 	display: none;
 }
-.show-container {
-	background-color: var(--light-yellow);
-	border-radius: 0.25rem;
-	padding: 20px;
-}
+
 .result-heading,
 .bmi-number {
 	text-align: center;
@@ -81,13 +87,37 @@ label {
 	border-radius: 0.25rem;
 }
 .result-heading {
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	line-height: 40px;
+	margin-top: 10px;
 }
 .bmi-number {
-	font-size: 20px;
+	font-size: 22px;
 	letter-spacing: 1px;
+}
+.shades-element {
+	width: 100%;
+	height: 1.5rem;
+	z-index: 0;
+	overflow: hidden;
+	border-radius: 8px;
+	background: linear-gradient(
+		to right,
+		rgb(0, 121, 199) -0.04%,
+		rgb(0, 121, 199) 11.96%,
+		rgb(0, 121, 61) 19.95%,
+		rgb(253, 216, 52) 39.98%,
+		rgb(216, 0, 19)
+	);
+}
+.result-title-div {
+	margin-bottom: 50px;
+	height: fit-content;
+}
+.result-title-text {
+	text-align: center;
+	margin-top: 20px;
 }
 
 .sub-content-row {
@@ -101,28 +131,36 @@ label {
 	margin: auto;
 	padding: 10px;
 }
+.footer {
+	position: absolute !important;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 500px) {
-	form {
+	.heading-container,
+	form,
+	.show-container {
 		width: 60%;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.heading-container {
-		width: 50%;
-	}
-	form {
+	.heading-container,
+	form,
+	.show-container {
 		width: 50%;
 	}
 }
 
 @media screen and (min-width: 992px) {
-	.heading-container {
+	.show-container {
+		width: 30%;
+	}
+	.heading-container,
+	.show-container {
 		width: 40%;
 	}
 	form {
-		width: 30%;
+		width: 25%;
 	}
 }

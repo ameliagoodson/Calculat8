@@ -2,10 +2,10 @@
 .navbar {
 	background-image: radial-gradient(
 			circle,
-			rgba(255, 255, 255, 0.2),
-			rgba(53, 2, 73, 0.9)
+			rgba(87, 5, 90, 0.2),
+			rgba(31, 1, 42, 0.9)
 		),
-		url("../../assets/pattern-small-hexagon.png");
+		url("../../assets/pattern_hexagon-light.png");
 
 	margin-bottom: 2rem;
 	padding-left: 1rem;

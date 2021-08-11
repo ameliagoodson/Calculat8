@@ -9,6 +9,7 @@ var input1 = document.querySelector('#input1')
 var input2 = document.querySelector('#input2')
 
 
+
 // Add click event to measurement button drop down
 btnDropdown.addEventListener('click', function (event) {
     event.preventDefault()
@@ -20,8 +21,10 @@ btnDropdown.addEventListener('click', function (event) {
 // TEMPERATURE 
 listTemp.addEventListener('click', function () {
     divDropdown.classList.toggle('active')
-    label1.innerHTML = 'Celcius',
-    label2.innerHTML = 'Farenheit',
+    input1.placeholder = "Enter a number"
+    input2.placeholder = "Enter a number"
+    label1.textContent = 'Celcius',
+    label2.textContent = 'Farenheit',
     clear()
     updateInput()
     }
