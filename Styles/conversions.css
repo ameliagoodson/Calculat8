@@ -85,6 +85,7 @@ ul {
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
+	font-weight: bold;
 	height: 3rem;
 }
 .label1,
