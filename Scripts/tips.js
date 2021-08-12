@@ -22,6 +22,11 @@ function calculateTip() {
     var percent = parseFloat(inputPercent.value)
     var people = parseFloat(inputPeople.value)
 
+    // if user does not enter a tip %, default to 0
+    if (isNaN(percent)) {
+        percent = 0
+    }
+
     if (!people || !price) {
         inputPrice.placeholder = "Please enter a number"
         inputPeople.placeholder = "Please enter a number"
@@ -29,11 +34,11 @@ function calculateTip() {
     else {
     var tipCalc = price * `0.${percent}`
     var tip = parseFloat(tipCalc.toFixed(2))
-    tipAmountTotal.textContent = "$" + tip
-    console.log(price + tip)
+    
+    tipAmountTotal.textContent = "$" + tip.toFixed(2)
     var total = parseFloat(price + tip)
     
-    newTotal.textContent = total.toFixed(2)
+    newTotal.textContent = "$" + total.toFixed(2)
         // if no number of people is entered, assume one person
     if (percent && price && !people) {
         people = 1
