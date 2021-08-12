@@ -1,12 +1,14 @@
 @import url(../Base/base.css);
 .footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: var(--platinum);
 	bottom: 0;
 	width: 100%;
 	padding-left: 1rem;
 	padding-right: 1rem;
-	height: 3.5rem; /* Footer height */
-	text-align: center;
+	height: 3.5rem;
 	position: absolute;
 }
 .footer-links {

@@ -14,13 +14,13 @@ var input2 = document.querySelector('#input2')
 btnDropdown.addEventListener('click', function (event) {
     event.preventDefault()
     clearLabel()
-    divDropdown.classList.toggle('active')
+    divDropdown.classList.toggle('hide')
     
 })
 
 // TEMPERATURE 
 listTemp.addEventListener('click', function () {
-    divDropdown.classList.toggle('active')
+    divDropdown.classList.toggle('div-dropdown')
     input1.placeholder = "Enter a number"
     input2.placeholder = "Enter a number"
     label1.textContent = 'Celcius',

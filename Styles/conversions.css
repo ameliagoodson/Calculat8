@@ -10,13 +10,12 @@
 	margin: auto;
 }
 
-.active {
-	display: none;
-}
-
 .row-btn {
 	justify-content: center;
 	display: grid;
+}
+.hide {
+	display: none;
 }
 .dropdown-btn {
 	border: none;
@@ -50,46 +49,46 @@ ul {
 	background-color: var(--light-yellow);
 	padding: 20px;
 	width: 80%;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
 }
 .row {
 	margin: 0px;
 }
 
-.input-row {
-	grid-template-columns: 50% 50%;
-	grid-column-gap: 20px;
-}
 .column-input {
 	text-align: center;
-	width: 100%;
+	margin: 10px;
 }
 
-#column1 {
+#column1,
+#column2 {
+	/* margin-top: 20px; */
+	display: flex;
+}
+.input-row {
 	margin-top: 20px;
 }
-
-#column2 {
-	margin-top: 0px;
-}
-
 .input-number {
 	background-color: white;
 	height: 3rem;
 	border: none;
 	border-radius: 0.25rem;
-	width: 50%;
 	padding-left: 10px;
+	width: 100%;
 }
 
 .input-label {
-	width: 40%;
-	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-transform: uppercase;
 	height: 3rem;
 }
-#label1,
-#label2 {
+.label1,
+.label2 {
 	margin-bottom: 0px;
 }
 
@@ -108,6 +107,11 @@ ul {
 /* MEDIA QUERIES */
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 400px) {
+	.conversion-container {
+		width: 90%;
+	}
+}
 @media screen and (min-width: 500px) {
 	.conversion-container {
 		width: 60%;

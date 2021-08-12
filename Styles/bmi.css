@@ -24,6 +24,7 @@ form {
 	min-height: fit-content;
 	padding: 20px;
 	background-color: var(--light-yellow);
+	margin-bottom: 40px;
 }
 /* _____________________________ */
 
@@ -51,6 +52,7 @@ form {
 label {
 	margin-left: 10px;
 	margin-bottom: 10px;
+	font-weight: bold;
 }
 .div-btn {
 	display: flex;
