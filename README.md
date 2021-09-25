@@ -5,7 +5,8 @@ Calculat8 is a cheerfully-coloured frontend website featuring a main basic calcu
 https://ameliagoodson.github.io/Calculat8/
 
 # Preview
-![ameliagoodson github io_Calculat8_(iPhone 6_7_8 Plus)](https://user-images.githubusercontent.com/60428536/134760737-e677447b-2fcb-4071-9c49-bab678648ece.png)
+![ameliagoodson github io_Calculat8_(iPhone 6_7_8 Plus)](https://user-images.githubusercontent.com/60428536/134760925-71fda0db-d9c1-4910-8915-511408d4d4d4.png)
+
 
 # Technology and features
 * Coded in HTML, CSS, some use of modified Bootstrap, and functionality of all calculators in native JavaScript
