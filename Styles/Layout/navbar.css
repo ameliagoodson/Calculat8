@@ -87,6 +87,7 @@
 		display: block;
 		background-color: rgba(255, 255, 255, 0.9);
 		border-radius: 0.25rem;
+		margin-left: 2rem;
 	}
 
 	.navbar-lg-ul {
