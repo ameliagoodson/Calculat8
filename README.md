@@ -15,4 +15,4 @@ https://ameliagoodson.github.io/Calculat8/
 * Body Mass Index (BMI) calculator in metric units which displays information to the user based on their input
 * Tip and split bill calculator where the user can can enter the number of patrons, price and optional tip percentage to calculate each person's portion of a bill
 * Convert kilometres to miles, farenheit to celcius and pounds to kilograms 
-* Hexagonal background pattern of the navigation bar was created with SVG pattern generator, [Pattern Monster] (https://pattern.monster/). The radial gradient overlay is made easier with design tools like [CSS Gradient] (https://cssgradient.io/)
+* Hexagonal background pattern of the navigation bar was created with SVG pattern generator, [Pattern Monster](https://pattern.monster/). The radial gradient overlay is made easier with design tools like [CSS Gradient](https://cssgradient.io/)
